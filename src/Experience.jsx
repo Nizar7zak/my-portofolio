@@ -5,16 +5,21 @@ import {
     Float, 
     Environment, 
     useGLTF, 
-    PresentationControls
+    PresentationControls,
+    Sky
 } from '@react-three/drei'
 
 export default function Experience(){
-    const laptop = useGLTF('https://vazxmixjsiawhamofees.supabase.co/storage/v1/object/public/models/macbook/model.gltf')
+    const laptop = useGLTF(
+        'https://vazxmixjsiawhamofees.supabase.co/storage/v1/object/public/models/macbook/model.gltf'
+    )
     return <>
 
-        <Environment preset='city' />
+        <Environment 
+            preset='warehouse'
+        />
+        <Sky />
         <color args={ [ '#241a1a' ] } attach='background' />
-
         <PresentationControls
             global
             rotation={[ 0.13, 0.1, 0 ]}
@@ -55,6 +60,7 @@ export default function Experience(){
                     children={'Nizar\rZakout'}
                     textAlign='center'
                     maxWidth={2}
+                    color="rgba(100,0,255,0)"
                 >
                 </Text>
 
