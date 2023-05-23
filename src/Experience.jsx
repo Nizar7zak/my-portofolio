@@ -1,4 +1,5 @@
 import { 
+    Text,
     Html,
     ContactShadows,
     Float, 
@@ -20,7 +21,7 @@ export default function Experience(){
             polar={[ -0.4, 0.2 ]}
             azimuth={[ -1, 0.75 ]}
             config={{ mass: 2, tension: 400}}
-            snap={{ mass:4, tension: 400 }}
+            // snap={{ mass:4, tension: 400 }}
         >
             <Float rotationIntensity={ 0.4 }>
                 <rectAreaLight 
@@ -45,6 +46,18 @@ export default function Experience(){
                         <iframe src='./portofolio/index.html' />
                     </Html>
                 </primitive>
+            
+                <Text
+                    font='./bangers-v20-latin-regular.woff'
+                    fontSize={1}
+                    position={[ 2, 0.75, 0.9 ]}
+                    rotation-y={-1.25}
+                    children={'Nizar\rZakout'}
+                    textAlign='center'
+                    maxWidth={2}
+                >
+                </Text>
+
             </Float>
         </PresentationControls>
         <ContactShadows 
