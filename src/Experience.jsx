@@ -1,4 +1,5 @@
 import { 
+    Html,
     ContactShadows,
     Float, 
     Environment, 
@@ -25,7 +26,17 @@ export default function Experience(){
                 <primitive 
                     object={laptop.scene} 
                     position-y = { -1.2 }
-                    />
+                >
+                    <Html 
+                        transform
+                        wrapperClass='htmlScreen'
+                        distanceFactor={1.17}
+                        position={ [ 0, 1.56, -1.4] }
+                        rotation-x = { -0.256 }
+                    >
+                        <iframe src='./portofolio/index.html' />
+                    </Html>
+                </primitive>
             </Float>
         </PresentationControls>
         <ContactShadows 
