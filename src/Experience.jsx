@@ -16,7 +16,7 @@ export default function Experience(){
     return <>
 
         <Environment 
-            preset='warehouse'
+            preset='city'
         />
         <Sky />
         <color args={ [ '#241a1a' ] } attach='background' />
