@@ -77,6 +77,38 @@ section {
     margin:0.7rem 3rem;
 }
 
+.projects-container {
+    width: 100%;
+}
+
+.project{
+    max-width: 35%;
+    border: 2px solid #fff;
+    border-radius: 1rem;
+}
+
+.project-image {
+    max-width: 100%;
+    border-radius: 1rem;
+}
+
+.link {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 2rem;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.project-title {
+    background-color: #45f3ff46;
+    margin: 0.5rem 0 0.5rem 0 ;
+}
+
+
 .duration {
     display: flex;
     justify-content:flex-start;
