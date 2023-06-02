@@ -15,9 +15,7 @@ export default function Experience(){
     )
     return <>
 
-        <Environment 
-            preset='city'
-        />
+        <Environment />
         <Sky />
         <color args={ [ '#241a1a' ] } attach='background' />
         <PresentationControls
